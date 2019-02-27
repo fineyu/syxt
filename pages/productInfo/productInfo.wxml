@@ -1,0 +1,214 @@
+<view>
+  <!-- 产品介绍顶部 -->
+    <view class='top'>
+        <view class='top_con'>
+            <image src='{{img_url}}'></image>
+            <view  class='com_info'>
+                <view class='name odd-ellipsis'>{{title}}</view>
+                <view class='details even-ellipsis'>{{details}}</view>
+            </view>
+        </view>
+    </view>
+    <!-- 二维码 -->
+    <canvas class='canvas' canvas-id='canvas' bindlongtap='save' hidden='{{maskFlag}}' ></canvas>
+    
+
+    <view class='title'>产品溯源信息</view>
+    <view class='lists'>
+        <!-- 农事操作 -->
+        <view class='farm {{farm==0?" ":"none"}}' bindtap='farmClick'>
+          <image src='../image/farm.png' class='icon'></image>
+          <text>农事操作</text>
+          <image src='../image/xiala.png' class='xiala'></image>
+        </view>
+
+        <view class='choosed {{farm==0?"none":" "}}' bindtap='farmClick'>
+          <image src='../image/farm2.png' class='icon2'></image>
+          <text>农事操作</text>
+          <image src='../image/xiala2.png' class='xiala2'></image>
+        </view>
+        <view class='farm_com {{farm==0?"none":" "}}'>
+          <view class='farm_caption'>
+            <text>负责人</text>
+            <text>操作事项</text>
+            <text>操作时间</text>
+          </view>
+          <view class='farm_details' wx:for="{{farmers}}">
+            <text>{{item.name}}</text>
+            <text>{{item.action}}</text>
+            <text>{{item.add_time}}</text>
+          </view>
+        </view>
+
+        <!-- 施肥信息    -->
+        <view class='farm {{shifei==0?" ":"none"}}'  bindtap='shifeiClick'>
+          <image src='../image/shifei.png' class='icon'></image>
+          <text>施肥信息</text>
+          <image src='../image/xiala.png' class='xiala'></image>
+        </view>
+
+        <view class='choosed {{shifei==0?"none":" "}}'  bindtap='shifeiClick'>
+          <image src='../image/shifei2.png' class='icon2'></image>
+          <text>施肥信息</text>
+          <image src='../image/xiala2.png' class='xiala2'></image>
+        </view>
+        <view class='shifei_com {{shifei==0?"none":" "}}'>
+          <view class='shifei_caption'>
+            <text>负责人</text>
+            <text>肥料名称</text>
+            <text>操作规范</text>
+            <text>操作时间</text>
+          </view>
+          <view class='shifei_details' wx:for="{{shifeiInfo}}">
+            <text>{{item.name}}</text>
+            <text>{{item.fl_name}}</text>
+            <text>{{item.num}}</text>
+            <text>{{item.add_time}}</text>
+          </view>
+        </view>
+
+        <!-- 用药信息 -->
+        <view class='farm {{medicine==0?" ":"none"}}' bindtap='medicineClick'>
+          <image src='../image/yongyao.png' class='icon'></image>
+          <text>用药信息</text>
+          <image src='../image/xiala.png' class='xiala'></image>
+        </view>
+
+        <view class='choosed {{medicine==0?"none":" "}}' bindtap='medicineClick'>
+          <image src='../image/yongyao2.png' class='icon2'></image>
+          <text>用药信息</text>
+          <image src='../image/xiala2.png' class='xiala2'></image>
+        </view>
+        <view class='shifei_com {{medicine==0?"none":" "}}'>
+          <view class='shifei_caption'>
+            <text>负责人</text>
+            <text>农药名称</text>
+            <text>防治对象</text>
+            <text>操作时间</text>
+          </view>
+          <view class='shifei_details' wx:for="{{medicineInfo}}">
+            <text>{{item.name}}</text>
+            <text>{{item.ny_name}}</text>
+            <text>{{item.to}}</text>
+            <text>{{item.add_time}}</text>
+          </view>
+        </view>
+
+        <!-- 加工信息 -->
+        <view class='farm {{process==0?" ":"none"}}' bindtap='processClick'>
+          <image src='../image/jiagong.png' class='icon'></image>
+          <text>加工信息</text>
+          <image src='../image/xiala.png' class='xiala'></image>
+        </view>
+
+        <view class='choosed {{process==0?"none":" "}}' bindtap='processClick'>
+          <image src='../image/jiagong2.png' class='icon2'></image>
+          <text>加工信息</text>
+          <image src='../image/xiala2.png' class='xiala2'></image>
+        </view>
+        <view class='process_com {{process==0?"none":" "}}'>
+          <view class='farm_caption'>
+            <text>负责人</text>
+            <text>加工步骤</text>
+            <text>操作时间</text>
+          </view>
+          <view class='farm_details' wx:for="{{processInfo}}">
+            <text>{{item.name}}</text>
+            <text>{{item.action}}</text>
+            <text>{{item.add_time}}</text>
+          </view>
+        </view>
+
+
+        <!-- 包装信息 -->
+        <view class='farm {{pack==0?" ":"none"}}' bindtap='packClick'>
+          <image src='../image/pack.png' class='icon'></image>
+          <text>包装信息</text>
+          <image src='../image/xiala.png' class='xiala'></image>
+        </view>
+
+        <view class='choosed {{pack==0?"none":" "}}' bindtap='packClick'>
+          <image src='../image/pack2.png' class='icon2'></image>
+          <text>包装信息</text>
+          <image src='../image/xiala2.png' class='xiala2'></image>
+        </view>
+        <view class='pack_com {{pack==0?"none":" "}}'>
+          <view class='pack_caption'>
+            <text>负责人</text>
+            <text>规格</text>
+            <text>数量</text>
+            <text>保质期</text>
+            <text>操作时间</text>
+          </view>
+          <view class='pack_details' wx:for="{{packInfo}}">
+            <text>{{item.name}}</text>
+            <text>{{item.guige}}</text>
+            <text>{{item.num}}</text>
+            <text>{{item.day}}</text>
+            <text>{{item.add_time}}</text>
+          </view>
+        </view>
+
+        <!-- 监测信息 -->
+        <view class='farm {{check==0?" ":"none"}}' bindtap='checkClick'>
+          <image src='../image/check.png' class='icon'></image>
+          <text>监测信息</text>
+          <image src='../image/xiala.png' class='xiala'></image>
+        </view>
+
+        <view class='choosed {{check==0?"none":" "}}' bindtap='checkClick'>
+          <image src='../image/check2.png' class='icon2'></image>
+          <text>监测信息</text>
+          <image src='../image/xiala2.png' class='xiala2'></image>
+        </view>
+        <view class='farm_com {{check==0?"none":" "}}'>
+          <view class='farm_caption'>
+            <text>检测结果</text>
+            <text>检测项目</text>
+            <text>操作时间</text>
+          </view>
+          <view class='farm_details' wx:for="{{checkInfo}}">
+            <text>{{item.result}}</text>
+            <text>{{item.action}}</text>
+            <text>{{item.add_time}}</text>
+          </view>
+        </view>
+
+        <!-- 详情信息 -->
+        <view class='farm {{other==0?" ":"none"}}' bindtap='otherClick'>
+          <image src='../image/other.png' class='icon'></image>
+          <text>详情信息</text>
+          <image src='../image/xiala.png' class='xiala'></image>
+        </view>
+
+        <view class='choosed {{other==0?"none":" "}}'  bindtap='otherClick'>
+          <image src='../image/other2.png' class='icon2'></image>
+          <text>详情信息</text>
+          <image src='../image/xiala2.png' class='xiala2'></image>
+        </view>
+        <view class='other_details {{other==0?"none":" "}}'>
+          <text>{{introduction}}</text>
+          <image wx:for="{{otherImages}}" src='{{item}}'></image>
+        </view>
+    </view>
+
+
+    <view class='button'>
+        <view class='button_left' bindtap='phone'>
+          <image  src='{{contactSrc}}'></image>
+          <text>联系商家</text>
+        </view>
+        <button data-name="shareBtn" open-type="share" class='button_right'>
+          <image src='{{fenxiangSrc}}'></image>
+          <text>分享</text>
+        </button>
+
+        <!-- <view class='button_right'  bindtap='onShareAppMessage'>
+          <image src='{{fenxiangSrc}}'></image>
+          <text>分享</text>
+        </view> -->
+    </view>
+
+    <view class='code_icon' bindtap='code'><image src='../image/code.png'></image></view>
+    <view class='mask' hidden='{{maskFlag}}' bindtap='maskHide'  catchtouchmove="false"></view>
+</view>

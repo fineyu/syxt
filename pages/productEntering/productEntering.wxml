@@ -1,0 +1,61 @@
+  <!-- 产品信息录入 -->
+    <view class='product'>
+       
+        <!-- 具体信息 -->
+        <view class='entering_lists'>
+            <view class='list' bindtap='productClick'>
+                <image src='../image/cplr.png' class='icon'></image>
+                <text>产品信息</text>
+                <image src='../image/jingru.png' class='entering'></image>
+            </view>
+        </view>
+        <view class='entering_lists'>
+            <view class='list' bindtap='farmClick'>
+                <image src='../image/farm.png' class='icon'></image>
+                <text>农事操作</text>
+                <image src='../image/jingru.png' class='entering'></image>
+            </view>
+        </view>
+        <view class='entering_lists'>
+            <view class='list' bindtap='shifeiClick'>
+                <image src='../image/shifei.png' class='icon'></image>
+                <text>施肥信息</text>
+                <image src='../image/jingru.png' class='entering'></image>
+            </view>
+        </view>
+        <view class='entering_lists'>
+            <view class='list' bindtap='medicineClick'>
+                <image src='../image/yongyao.png' class='icon'></image>
+                <text>用药信息</text>
+                <image src='../image/jingru.png' class='entering'></image>
+            </view>
+        </view>
+        <view class='entering_lists'>
+            <view class='list' bindtap='processClick'>
+                <image src='../image/jiagong.png' class='icon'></image>
+                <text>加工信息</text>
+                <image src='../image/jingru.png' class='entering'></image>
+            </view>
+        </view>
+        <view class='entering_lists'>
+            <view class='list' bindtap='packClick'>
+                <image src='../image/pack.png' class='icon'></image>
+                <text>包装信息</text>
+                <image src='../image/jingru.png' class='entering'></image>
+            </view>
+        </view>
+        <view class='entering_lists'>
+            <view class='list'  bindtap='checkClick'>
+                <image src='../image/check.png' class='icon'></image>
+                <text>监测信息</text>
+                <image src='../image/jingru.png' class='entering'></image>
+            </view>
+        </view>
+<view class='entering_lists'>
+            <view class='list'  bindtap='otherClick'>
+                <image src='../image/other.png' class='icon'></image>
+                <text>详情信息</text>
+                <image src='../image/jingru.png' class='entering'></image>
+            </view>
+        </view>
+    </view>

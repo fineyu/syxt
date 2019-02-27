@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "喜德产品溯源",
+  "navigationBarBackgroundColor": "#f2c81f",
+  "usingComponents": {
+    "ec-canvas": "../../ec-canvas/ec-canvas"
+  }
+}

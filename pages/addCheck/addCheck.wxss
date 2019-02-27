@@ -1,0 +1,130 @@
+page{
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+}
+.check{
+  width: 95vw;
+  margin:20rpx auto;
+  border-radius: 20rpx;
+  background-color: #fff;
+}
+.time{
+  width: 95%;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-family: "黑体";
+  font-size: 28rpx;
+  color: #999;
+  border-bottom: 2rpx solid #eee;
+  margin: auto;
+}
+.time image{
+  width: 30rpx;
+  height: 30rpx;
+  margin: 25rpx 10rpx;
+  float: left;
+}
+.time input{
+  width: 89%;
+  height: 80rpx;
+  line-height: 80rpx;
+  float: left;
+}
+.time .tui-picker-content{
+  width: 89%;
+  float:left;
+  height:80rpx;
+  line-height:80rpx;
+  margin: 0;
+  padding: 0 ;
+  text-align: left;
+}
+.time .tui-picker-detail{
+  font-family: "黑体";
+  font-size: 28rpx;
+  color: #999;
+  padding: 0;
+}
+.product{
+  width: 95%;
+  height: 180rpx;
+  font-family: "黑体";
+  font-size: 28rpx;
+  color: #999;
+  border-bottom: 2rpx solid #eee;
+  margin: auto;
+}
+.product image{
+  width: 30rpx;
+  height: 30rpx;
+  margin: 25rpx 10rpx;
+  float: left;
+}
+.product input{
+  width: 89%;
+  height: 156rpx;
+  float: left;
+  padding-top: 24rpx;
+}
+.result{
+  width: 95%;
+  height: 84rpx;
+  line-height: 84rpx;
+}
+.result .title image{
+  width: 30rpx;
+  height: 30rpx;
+  margin:27rpx 10rpx 0 30rpx;
+  float: left;
+}
+.result .title{
+  height: 84rpx;
+  line-height: 84rpx;
+  float: left;
+  font-family: "黑体";
+  font-size: 28rpx;
+  color: #353535;
+}
+
+.none{
+  display: none;
+}
+.choose{
+  height: 84rpx;
+  line-height: 84rpx;
+  float: right;
+}
+.choose view{
+   height: 84rpx;
+  line-height: 84rpx;
+  float: right;
+  font-family: "黑体";
+  font-size: 28rpx;
+  color: #353535;
+  margin-left: 30rpx;
+
+}
+.choose view image{
+  width: 25rpx;
+  height: 25rpx;
+  margin-left: 10rpx;
+}
+.next{
+  width: 95vw;
+  height:90rpx;
+  border-radius: 50rpx;
+  margin: auto;
+  position: fixed;
+  bottom: 40rpx;
+  right: 2.5vw;
+  line-height: 90rpx;
+  text-align: center;
+  font-family: "黑体";
+  font-size: 36rpx;
+  color: #353535;
+  background: -webkit-linear-gradient(left, #f9c852 , #fee870); /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(right, #f9c852, #fee870); /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(right, #f9c852, #fee870); /* Firefox 3.6 - 15 */
+  background: linear-gradient(to right, #f9c852 , #fee870); /* 标准的语法 */
+}

@@ -1,0 +1,123 @@
+page{
+  background-color: #f8f8f8;
+  margin: 0;
+  padding: 0;
+}
+.company_list{
+  width: 95vw;
+  height: 122rpx;
+  background-color: #fff;
+  border-radius: 10rpx;
+  margin:12rpx auto;
+  line-height: 122rpx;
+}
+.company_list .header{
+  width: 100rpx;
+  height:100rpx;
+  float:left;
+  margin: 11rpx 14rpx;
+}
+.company_list .name{
+  width: 366rpx;
+  height: 122rpx;
+  float: left;
+}
+.company_list .name .pro_name{
+  width: 366rpx;
+  height: 61rpx;
+  line-height: 61rpx;
+  font-family: "黑体";
+  font-size: 32rpx;
+  color: #353535;
+  overflow:hidden;
+  white-space:nowrap;
+  text-overflow:ellipsis;
+  float: left;
+}
+.company_list .name .see_number{
+  width: 366rpx;
+  height: 61rpx;
+  line-height: 61rpx;
+  font-family: "黑体";
+  font-size: 28rpx;
+  color: #999;
+  float: left;
+}
+.company_list .name .see_number text{
+  position:relative;
+  top:-9rpx;
+  left:10rpx;
+}
+.company_list .name image{
+  width: 56rpx;
+  height: 32rpx;
+}
+/* .odd-ellipsis{overflow:hidden;white-space:nowrap;text-overflow:ellipsis;} */
+.button{
+  width: 172rpx;
+  height: 56rpx;
+  line-height: 56rpx;
+  float: right;
+  border-radius: 40rpx;
+  margin-top: 33rpx;
+  margin-right: 13rpx;
+}
+.button .left{
+  width: 50%;
+  height: 56rpx;
+  float: left;
+  text-align: center;
+  line-height: 56rpx;
+  background-color: #4a4a4a;
+}
+.button .left image{
+  width: 30rpx;
+  height: 30rpx;
+  margin-top: 13rpx;
+}
+.button .right{
+  width: 50%;
+  height: 56rpx;
+  float: left;
+  text-align: center;
+  line-height: 56rpx;
+  background-color: #f04644;
+}
+.button .right image{
+  width: 30rpx;
+  height: 30rpx;
+  margin-top: 13rpx;
+}
+.next{
+  width: 95vw;
+  height:90rpx;
+  border-radius: 50rpx;
+  margin: auto;
+  position: fixed;
+  bottom: 40rpx;
+  right: 2.5vw;
+  line-height: 90rpx;
+  text-align: center;
+  font-family: "黑体";
+  font-size: 36rpx;
+  color: #353535;
+  background: -webkit-linear-gradient(left, #f9c852 , #fee870); /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(right, #f9c852, #fee870); /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(right, #f9c852, #fee870); /* Firefox 3.6 - 15 */
+  background: linear-gradient(to right, #f9c852 , #fee870); /* 标准的语法 */
+}
+.footer{
+  width: 100vw;
+  height:90rpx;
+  margin: 40rpx 0;
+}
+
+.null{
+  width:30vw;
+  height:30vh;
+  margin:200rpx auto;
+  display:block;
+}
+.none{
+  display: none;
+}

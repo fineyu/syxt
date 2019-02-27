@@ -1,0 +1,39 @@
+/* 产品信息录入 */
+page{
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+}
+
+.list{
+  width: 95vw;
+  height: 88rpx;
+  line-height: 88rpx;
+  margin:18rpx auto;
+  border-radius: 20rpx;
+  background-color: #fff;
+}
+.list .icon{
+  width: 30rpx;
+  height: 30rpx;
+  float: left;
+  margin: 29rpx 20rpx;
+}
+.list text{
+  font-family: "黑体";
+  color: #999;
+  font-size: 30rpx;
+  float: left;
+}
+.list .entering{
+  float: right;
+  width: 18rpx;
+  height: 30rpx;
+  margin: 29rpx;
+}
+.list .finished{
+  float: right;
+  font-family: "黑体";
+  font-size: 28rpx;
+  color: #999;
+}

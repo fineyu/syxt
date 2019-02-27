@@ -1,0 +1,83 @@
+
+page{
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+}
+.content{
+  padding-top: 14rpx;
+}
+.company{
+  width: 96vw;
+  height: 530rpx;
+  margin: auto;
+  display: -webkit-flex; /* Safari */
+  display: flex ;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content:space-between;
+}
+.company_list{
+  width: 47vw;
+  height: 530rpx;
+  background-color: #fff;
+  border-radius: 20rpx;
+  margin-bottom: 20rpx;
+  position: relative;
+}
+.company_list image{
+  width: 100%;
+  height:280rpx;
+  border-top-left-radius: 20rpx;
+  border-top-right-radius: 20rpx;
+}
+.company_list .introduce{
+  font-size: 28rpx;
+  font-family: "黑体";
+  color: #353535;  
+  width: 96%;
+  padding: 2%;
+}
+.even-ellipsis{
+  display:-webkit-box !important;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  word-break:break-all;
+  -webkit-box-orient:vertical;
+  -webkit-line-clamp:2;
+}
+.company_list .label{
+  padding: 6rpx 14rpx;
+  border: 2rpx solid #ec6e63;
+  font-family: "黑体";
+  font-size: 28rpx;
+  color: #353535;
+  text-align: center;
+  float: right;
+  border-radius: 12rpx;
+  position:absolute;
+  right:20rpx;
+  bottom:106rpx;
+}
+.adress{
+  float: left;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.adress image{
+  width: 50rpx;
+  height: 60rpx;
+  float: left;
+  margin: 2%;
+}
+.adress text{
+  font-family: "黑体";
+  font-size: 24rpx;
+  color:#666;
+  float: left;
+  display: block;
+  width: 80%;
+  line-height: 60rpx;
+}
+.odd-ellipsis{overflow:hidden;white-space:nowrap;text-overflow:ellipsis;}

@@ -1,0 +1,94 @@
+page{
+  padding: 0;
+  margin: 0;
+  background-color: #f8f8f8;
+}
+.checkInfo{
+  width: 95vw;
+  border-radius: 20rpx;
+  background-color: #fff;
+  margin: 20rpx auto;
+}
+.check_top{
+  width: 95%;
+  height: 70rpx;
+  line-height: 70rpx;
+  font-family: "黑体";
+  font-size: 29rpx;
+  color: #353535;
+  border-bottom: 2rpx solid #eee;
+  margin: auto;
+}
+.top_right {
+  float: right;
+}
+.top_right text{
+  padding:8rpx 12rpx;
+  background-color:#f04644;
+  color:#fff;
+  border-radius:20rpx;
+}
+.top_left{
+  float: left;
+}
+.contain{
+  width: 95%;
+  margin: auto;
+  padding: 10rpx 14rpx;
+  font-family: "黑体";
+  font-size: 28rpx;
+  color: #353535;
+}
+.button{
+  width: 95%;
+  height: 86rpx;
+  line-height: 86rpx;
+  font-family: "黑体";
+  font-size: 28rpx;
+  color: #353535;
+  border-top: 2rpx solid #eee;
+}
+.button view{
+  float: right;
+}
+.button view image{
+  width: 50rpx;
+  height: 50rpx;
+  position: relative;
+  top: 20rpx;
+}
+.change{
+  margin-right: 20rpx;
+}
+.next{
+  width: 95vw;
+  height:90rpx;
+  border-radius: 50rpx;
+  margin: auto;
+  position: fixed;
+  bottom: 40rpx;
+  right: 2.5vw;
+  line-height: 90rpx;
+  text-align: center;
+  font-family: "黑体";
+  font-size: 36rpx;
+  color: #353535;
+  background: -webkit-linear-gradient(left, #f9c852 , #fee870); /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(right, #f9c852, #fee870); /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(right, #f9c852, #fee870); /* Firefox 3.6 - 15 */
+  background: linear-gradient(to right, #f9c852 , #fee870); /* 标准的语法 */
+}
+.footer{
+  width: 100vw;
+  height:90rpx;
+  margin: 40rpx auto;
+}
+.null{
+  width:30vw;
+  height:30vh;
+  margin:200rpx auto;
+  display:block;
+}
+.none{
+  display: none;
+}

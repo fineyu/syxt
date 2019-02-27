@@ -1,0 +1,21 @@
+<view class='add_farm'>
+  <view class='name'>
+    <image src='../image/linkname.png'></image>
+    <input placeholder='操作负责人'  value='{{people}}' bindblur='people'></input>
+  </view>
+  <view class='name'>
+    <image src='../image/time2.png'></image>
+    <view class="tui-picker-content">
+        <picker mode="multiSelector" value="{{dateTime}}" bindchange="changeDateTime" bindcolumnchange="changeDateTimeColumn" range="{{dateTimeArray}}">
+          <view class="tui-picker-detail">
+            选择日期时间: {{dateTimeArray[0][dateTime[0]]}}-{{dateTimeArray[1][dateTime[1]]}}-{{dateTimeArray[2][dateTime[2]]}} {{dateTimeArray[3][dateTime[3]]}}:{{dateTimeArray[4][dateTime[4]]}}:{{dateTimeArray[5][dateTime[5]]}}
+          </view>
+        </picker>
+    </view>
+  </view>
+  <view class='name bottom'>
+    <image src='../image/farm.png'></image>
+    <input placeholder='农事操作'   value='{{farmThing}}' bindblur='farmThing'></input>
+  </view>
+</view>
+<view class='next' bindtap='add'>确认添加</view>

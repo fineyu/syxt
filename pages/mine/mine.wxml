@@ -1,0 +1,53 @@
+<view>
+    <!-- 顶部信息 -->
+   <view class='top'>
+      <view class='header'>
+          <image src='{{header}}'></image>
+          <text>{{userName}}</text>
+          <view class='approve {{success==0?"none":" "}}'>认证管理员</view>
+      </view>
+   </view>
+
+   <!-- 登录 -->
+   <view class='register {{success==0?" ":" none"}}'>
+      <view class='register_title'>管理员登录</view>
+      <!-- 点击登录 -->
+      <view class='not {{register==0?" ":"none"}}'>
+          <view class='button' bindtap='register'>
+              <image src='{{vipSrc}}'></image>
+              <text>请登录</text>
+          </view>
+          <view class='tip'>管理员请登录解锁更多功能...</view>
+      </view>
+      <!-- 登录入口输入 -->
+      <view class='write {{register==0?"none":" "}}'>
+          <input type='text' placeholder='请输入账号' bindblur='writeAccount' value='{{account}}'></input>
+          <input type='password' placeholder='请输入密码' bindblur='writePassword' value='{{password}}'></input>
+          <view class='button' bindtap='enter'>登录</view>
+      </view>
+   </view>
+
+   <!-- 已登录显示产品录入 -->
+    <view class='entering {{success==0?"none":" "}}'>
+        <view class='register_title'>产品录入</view>
+          <view class='company_entering'  bindtap='companyEntering'>
+            <image src='../image/qylr.png'></image>
+            <text>企业录入</text>
+          </view>
+          <view class='product_entering' bindtap='productEntering'>
+            <image src='../image/cplr.png'></image>
+            <text>产品录入</text>
+          </view>
+    </view>
+
+
+
+
+   <!-- 平台介绍 -->
+   <view class='odl' bindtap='platformClick'>
+      <text>平台介绍</text>
+      <image src='{{enterSrc}}'></image>
+   </view>
+
+   <button class='drop_out' bindtap='dropOut'>退出登录</button>
+</view>

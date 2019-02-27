@@ -1,0 +1,29 @@
+<!-- 农事信息 -->
+<view class='farmInfo'  wx:for="{{farmersLists}}">
+  <view class='farmers_lists'>
+      <view class='farmer_name'>
+        <view class='name_left'>{{item.name}}</view>
+        <view class='name_right'>{{item.add_time}}</view>
+      </view>
+      <view class='farmer_name'>
+        <view class='name_left'>加工步骤</view>
+        <view class='details'>{{item.action}}</view>
+      </view>
+      <view class='button'>
+          <view class='delate' bindtap='delate'>
+            <image src='../image/delate2.png'></image>
+            <text>删除</text>
+          </view>
+          <view class='change' bindtap='change' data-index='{{index}}'>
+            <image src='../image/xiugai2.png'></image>
+            <text>修改</text>
+          </view>
+      </view>
+  </view>
+</view>
+
+<image src='{{nullSrc}}' class="null {{nullnum==0?'none':''}}" mode='aspectFit'></image>
+
+
+<view class='next' bindtap='addprocess'>新增加工</view>
+<view class='footer'></view>

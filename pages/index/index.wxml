@@ -1,0 +1,71 @@
+<!--index.wxml-->
+<view class="container">
+  <!-- 顶部广告搜索 -->
+  <view class='top'>
+    <view class='search'>
+        <image src='../image/search.png'></image>
+        <!-- <input placeholder='苹果' type='text' confirm-type="search" value='{{search}}' bindblur='onBindBlur'></input> -->
+        <view class='search_input' bindtap='searchTap'>搜索商品</view>
+        <button bindtap="scan">
+          <image src='../image/saoyisao.png' class='sao_icon'></image>
+          <text>扫一扫</text>
+        </button>
+    </view>
+    <view class='advertising'>
+      <image src='../image/guanggao.png' mode='aspectFit'></image>
+    </view>
+  </view>
+  <!-- 饼图展示 -->
+  <!-- <scroll-view scroll-x class="scroll-header  pie" >
+      <view class='pie_title'>柱状图</view>
+      <view class="container">
+        <ec-canvas id="mychart-dom-multi-bar" canvas-id="mychart-multi-bar" ec="{{ ec2 }}"></ec-canvas>
+      </view>
+  </scroll-view> -->
+  <!-- 饼图展示 -->
+  <view class='pie'>
+      <view class='pie_title'>乡镇企业产品分布占比</view>
+      <view class="container">
+        <ec-canvas id="mychart-dom-bar" canvas-id="mychart-bar" ec="{{ ec }}" bind:init="echartInit"></ec-canvas>
+      </view>
+  </view>
+  <!-- 企业展示 -->
+  <view class='company_title'>
+      溯源企业
+  </view>
+  <!-- 企业展示 -->
+  <swiper class='company' indicator-dots="{{indicatorDots}}" autoplay interval="{{interval}}" duration="{{duration}}" circular>
+    <block>
+      <swiper-item class='company_lists' wx:for="{{gs}}"  data-index="{{index}}" bindtap='companyClick'>
+        <view class='company_list'>
+          <image src='{{item.img_url}}'></image>
+          <text class='introduce even-ellipsis'>{{item.name}}</text>
+          <text class='label odd-ellipsis'>{{item.type}}</text>
+          <view class='adress'>
+            <image src='{{adressUrl}}' mode='aspectFit'></image>
+            <text class='odd-ellipsis'>{{item.addr}}</text>
+          </view>
+        </view>
+      </swiper-item>
+    </block>
+  </swiper>
+  <!-- 溯源产品 -->
+  <view class='product_title'>
+      溯源产品
+  </view>
+  <view class='product'>
+    <view class='product_list' wx:for="{{goods}}" bindtap='productClick' data-index='{{index}}'>
+        <image src='{{item.img_url}}' class='pro'></image>
+        <view class='pro_right'>
+           <text class='even-ellipsis pro_info'>{{item.title}}</text>
+           <view class='check'>
+              <image src='{{seeUrl}}'></image>
+              <text>{{item.pv}}次</text>
+           </view>
+           <view class='pro_adress  even-ellipsis'>
+           {{item.desc}}
+           </view>
+        </view>
+    </view>
+  </view>
+</view>

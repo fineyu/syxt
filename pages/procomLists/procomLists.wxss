@@ -1,0 +1,44 @@
+/* pages/companyLists/companyLists.wxss */
+page{
+  background-color: #f8f8f8;
+  margin: 0;
+  padding: 0;
+}
+.company_list{
+  width: 95vw;
+  height: 122rpx;
+  background-color: #fff;
+  border-radius: 10rpx;
+  margin:12rpx auto;
+  line-height: 122rpx;
+}
+.company_list .header{
+  width: 70rpx;
+  height: 70rpx;
+  float:left;
+  border-radius: 50%;
+  margin: 26rpx 14rpx;
+}
+.company_list .name{
+  display: block;
+  width: 500rpx;
+  height: 122rpx;
+  line-height: 122rpx;
+  font-family: "黑体";
+  font-size: 32rpx;
+  float: left;
+  color: #353535;
+  overflow:hidden;
+  white-space:nowrap;
+  text-overflow:ellipsis;
+}
+/* .odd-ellipsis{overflow:hidden;white-space:nowrap;text-overflow:ellipsis;} */
+
+
+.company_list .jinru{
+  width: 20rpx;
+  height: 28rpx;
+  float: right;
+  margin-top: 47rpx;
+  margin-right: 20rpx;
+}

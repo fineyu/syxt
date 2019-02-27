@@ -1,0 +1,72 @@
+page{
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+}
+.add_farm{
+  width: 95vw;
+  height: 410rpx;
+  background-color: #fff;
+  margin:20rpx auto;
+  border-radius: 20rpx;
+}
+.name{
+  width: 95%;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-family: "黑体";
+  font-size: 28rpx;
+  color: #999;
+  border-bottom: 2rpx solid #eee;
+  margin: auto;
+}
+.name image{
+  width:30rpx;
+  height:35rpx;
+  float:left;
+  margin:22rpx 10rpx;
+  overflow: hidden;
+}
+.name input{
+  width: 90%;
+  float: left;
+  height: 80rpx;
+  line-height: 80rpx;
+  padding-left: 10rpx;
+}
+.name .tui-picker-content{
+  width: 90%;
+  float:left;
+  height:80rpx;
+  line-height:80rpx;
+  margin: 0;
+  padding: 0 ;
+  text-align: left;
+}
+.name .tui-picker-detail{
+  font-family: "黑体";
+  font-size: 28rpx;
+  color: #999;
+  padding: 0;
+}
+.bottom{
+  border-bottom: 0 !important;
+}
+.next{
+  width: 95vw;
+  height:90rpx;
+  border-radius: 50rpx;
+  margin: auto;
+  position: fixed;
+  bottom: 40rpx;
+  right: 2.5vw;
+  line-height: 90rpx;
+  text-align: center;
+  font-family: "黑体";
+  font-size: 36rpx;
+  color: #353535;
+  background: -webkit-linear-gradient(left, #f9c852 , #fee870); /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(right, #f9c852, #fee870); /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(right, #f9c852, #fee870); /* Firefox 3.6 - 15 */
+  background: linear-gradient(to right, #f9c852 , #fee870); /* 标准的语法 */
+}

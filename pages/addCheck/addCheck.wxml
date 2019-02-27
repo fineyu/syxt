@@ -1,0 +1,35 @@
+<view  class='check'>
+    <view class='time'>
+      <image src='../image/time2.png'></image>
+      <view class="tui-picker-content">
+        <picker mode="multiSelector" value="{{dateTime}}" bindchange="changeDateTime" bindcolumnchange="changeDateTimeColumn" range="{{dateTimeArray}}">
+          <view class="tui-picker-detail">
+            选择日期时间: {{dateTimeArray[0][dateTime[0]]}}-{{dateTimeArray[1][dateTime[1]]}}-{{dateTimeArray[2][dateTime[2]]}} {{dateTimeArray[3][dateTime[3]]}}:{{dateTimeArray[4][dateTime[4]]}}:{{dateTimeArray[5][dateTime[5]]}}
+          </view>
+        </picker>
+      </view>  
+    </view>
+    <view class='product'>
+      <image src='../image/xiangmu.png'></image>
+      <input placeholder='检测项目' value='{{action}}' bindblur='action'></input>
+    </view>
+    <view class='result'>
+      <view class='title'>
+        <image src='../image/jiance.png'></image>
+        <text>检测结果</text>
+      </view>
+      <view class='choose'>
+          <view class='buhege' bindtap='chooseUnselected'>
+              <text>不合格</text>
+              <image src='../image/unselected.png' class='{{select==0?"none":" "}}'></image>
+              <image src='../image/selected.png' class='{{select==0?"":"none"}}'></image>
+          </view>
+          <view class='hege' bindtap='chooseSelected'>
+              <text>合格</text>
+              <image src='../image/unselected.png' class='{{select==0?"":"none"}}'></image>
+              <image src='../image/selected.png'  class='{{select==0?"none":" "}}'></image>
+          </view>
+      </view>
+    </view>
+</view>
+<view class='next' bindtap='add'>确认添加</view>

@@ -1,0 +1,49 @@
+<view>
+    <!-- 公司介绍顶部 -->
+    <view class='top'>
+        <view class='top_con'>
+            <image src='{{img_url}}'></image>
+            <view  class='com_info'>
+              <image src='{{img_url}}' class='com_info_left'></image>
+              <text class='company_name odd-ellipsis'>{{name}}</text>
+              <text class='approve'>{{type}}</text>
+              <view class='share'>
+                  <button open-type='share'>
+                    <image src='{{shareUrl}}'></image>
+                    <text>分享</text>
+                  </button>
+              </view>
+            </view>
+        </view>
+    </view>
+    <!-- 公司信息简介 -->
+    <view class='title'>企业介绍</view>
+    <view class='info_detail'>
+      <!-- <view class='info_time'><image src='{{timeUrl}}'></image><text class='odd-ellipsis'>2017年10月18日成立</text></view> -->
+      <view class='info_adress'><image src='{{adresseUrl}}'></image><text class='odd-ellipsis'>{{city}}{{addr}}</text></view>
+      <view class='info_con'><image src='{{bookUrl}}'></image><text class="{{more==0?'three-ellipsis':''}}">{{desc}}</text></view> 
+      <view class='more {{more==0?" ":"none"}}' bindtap='moreGet'><text>了解更多</text><image src='{{pull}}'></image></view>
+      <view class='more {{more==0?"none":" "}}' bindtap='moreGet'><text>收起更多</text><image src='{{up}}'></image></view>
+    </view>
+    <!-- 企业溯源产品 -->
+    <view class='pro_title'>企业溯源产品</view>
+    <view class='product'>
+        <view class='product_list' wx:for="{{products}}"  data-index='{{index}}'  bindtap='productClick'>
+            <image src='{{item.img_url}}' class='pro'></image>
+            <view class='pro_right'>
+              <text class='even-ellipsis pro_info'>{{item.title}}</text>
+              <view class='check'>
+                  <image src='{{seeUrl}}'></image>
+                  <text>{{item.pv}}次</text>
+              </view>
+              <view class='pro_adress  even-ellipsis'>
+              {{item.addr}}
+              </view>
+            </view>
+        </view>
+    </view>
+    <view class='null {{nullNum==0?"":"none"}}'>
+        <image src='{{nullSrc}}'></image>
+    </view>
+</view>
+<view class='next' bindtap='contactPerson'>联系负责人</view>

@@ -1,0 +1,93 @@
+/* pages/companyLists/companyLists.wxss */
+page{
+  background-color: #f8f8f8;
+  margin: 0;
+  padding: 0;
+}
+.company_list{
+  width: 95vw;
+  height: 122rpx;
+  background-color: #fff;
+  border-radius: 10rpx;
+  margin:12rpx auto;
+  line-height: 122rpx;
+}
+.company_list .header{
+  width: 70rpx;
+  height: 70rpx;
+  float:left;
+  border-radius: 50%;
+  margin: 26rpx 14rpx;
+}
+.company_list .name{
+  display: block;
+  width: 366rpx;
+  height: 122rpx;
+  line-height: 122rpx;
+  font-family: "黑体";
+  font-size: 32rpx;
+  float: left;
+  color: #353535;
+  overflow:hidden;
+  white-space:nowrap;
+  text-overflow:ellipsis;
+}
+/* .odd-ellipsis{overflow:hidden;white-space:nowrap;text-overflow:ellipsis;} */
+.button{
+  width: 172rpx;
+  height: 56rpx;
+  line-height: 56rpx;
+  float: right;
+  border-radius: 40rpx;
+  margin-top: 33rpx;
+  margin-right: 13rpx;
+}
+.button .left{
+  width: 50%;
+  height: 56rpx;
+  float: left;
+  text-align: center;
+  line-height: 56rpx;
+  background-color: #4a4a4a;
+}
+.button .left image{
+  width: 30rpx;
+  height: 30rpx;
+  margin-top: 13rpx;
+}
+.button .right{
+  width: 50%;
+  height: 56rpx;
+  float: left;
+  text-align: center;
+  line-height: 56rpx;
+  background-color: #f04644;
+}
+.button .right image{
+  width: 30rpx;
+  height: 30rpx;
+  margin-top: 13rpx;
+}
+.next{
+  width: 95vw;
+  height:90rpx;
+  border-radius: 50rpx;
+  margin: auto;
+  position: fixed;
+  bottom: 40rpx;
+  right: 2.5vw;
+  line-height: 90rpx;
+  text-align: center;
+  font-family: "黑体";
+  font-size: 36rpx;
+  color: #353535;
+  background: -webkit-linear-gradient(left, #f9c852 , #fee870); /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(right, #f9c852, #fee870); /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(right, #f9c852, #fee870); /* Firefox 3.6 - 15 */
+  background: linear-gradient(to right, #f9c852 , #fee870); /* 标准的语法 */
+}
+.footer{
+  width: 100vw;
+  height:90rpx;
+  margin: 40rpx 0;
+}

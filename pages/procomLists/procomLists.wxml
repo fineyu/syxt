@@ -1,0 +1,8 @@
+<view>
+   <view class='company_list' wx:for="{{company_lists}}" data-index='{{index}}'  bindtap='enterProduct'>
+        <image src='{{item.img_url}}' class='header'></image>
+        <view class='name'>{{item.name}}</view>
+        <image src='../image/jingru.png' class='jinru'></image>
+   </view>
+   
+</view>

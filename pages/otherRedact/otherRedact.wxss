@@ -1,0 +1,68 @@
+page{
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+}
+.comtain{
+  width: 95vw;
+  display: inline-block;
+  background-color: #fff;
+  margin:10rpx 2.5vw;
+  border-radius: 10rpx;
+  box-shadow:4rpx 8rpx 10rpx #eee;
+  padding-top:20rpx;
+}
+.comtain .other_details image{
+  width: 30rpx;
+  height: 30rpx;
+  float: left;
+  margin-left: 20rpx;
+}
+.comtain .other_details input{
+  width: 91%;
+  height: 270rpx;
+  font-family: "黑体";
+  font-size: 30rpx;
+  color: #999;
+  float: left;
+  border-bottom: 2rpx solid #eee;
+}
+.comtain .phone{
+  width: 170rpx;
+  height: 160rpx;
+  float: left;
+  margin: 22rpx 30rpx;
+}
+.comtain text{
+  font-family: "黑体";
+  font-size: 28rpx;
+  color: #999;
+  float: left;
+}
+.img_list{
+  width: 170rpx;
+  height: 160rpx;
+  float: left;
+  margin: 22rpx 30rpx;
+}
+.next{
+  width: 95vw;
+  height:90rpx;
+  border-radius: 50rpx;
+  margin: auto;
+  position: fixed;
+  bottom: 40rpx;
+  right: 2.5vw;
+  line-height: 90rpx;
+  text-align: center;
+  font-family: "黑体";
+  font-size: 36rpx;
+  color: #353535;
+  background: -webkit-linear-gradient(left, #f9c852 , #fee870); /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(right, #f9c852, #fee870); /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(right, #f9c852, #fee870); /* Firefox 3.6 - 15 */
+  background: linear-gradient(to right, #f9c852 , #fee870); /* 标准的语法 */
+}
+.none{
+  display: none;
+}

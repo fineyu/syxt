@@ -1,0 +1,20 @@
+<!-- 所有产品 -->
+<view class='content'>
+  <view class='product {{num==0?" none":""}}'>
+      <view class='product_list' wx:for="{{products}}" data-index='{{index}}' bindtap='productClick'>
+          <image src='{{item.img_url}}' class='pro'></image>
+          <view class='pro_right'>
+            <text class='even-ellipsis pro_info'>{{item.title}}</text>
+            <view class='check'>
+                <image src='{{seeUrl}}'></image>
+                <text>{{item.pv}}次</text>
+            </view>
+            <view class='pro_adress  even-ellipsis'>
+            {{item.store_url}}
+            </view>
+          </view>
+      </view>
+  </view>
+
+  <image src='../image/null.png'  class='null {{num==0?" ":"none"}}'></image>
+</view>

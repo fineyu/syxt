@@ -1,0 +1,12 @@
+<view>
+   <view class='company_list' wx:for="{{company_lists}}">
+        <image src='{{item.img_url}}' class='header'></image>
+        <view class='name'>{{item.name}}</view>
+        <view class='button'>
+            <view class='left'><image src='../image/xiugai.png' data-index='{{index}}' bindtap='changeCompanyInfo'></image></view>
+            <view class='right'><image src='../image/delate.png' data-index='{{index}}' bindtap='delateCompanyInfo'></image></view>
+        </view>
+   </view>
+   <view class='next' bindtap='addNewCompany'>新增企业</view>
+   <view class='footer'></view>
+</view>

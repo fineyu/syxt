@@ -1,0 +1,29 @@
+<view class='add_farm'>
+  <view class='name'>
+    <image src='../image/linkname.png'></image>
+    <input placeholder='操作负责人'  value='{{name}}'  bindblur='name'></input>
+  </view>
+  <view class='name'>
+    <image src='../image/time2.png'></image>
+    <view class="tui-picker-content">
+        <picker mode="multiSelector" value="{{dateTime}}" bindchange="changeDateTime" bindcolumnchange="changeDateTimeColumn" range="{{dateTimeArray}}">
+          <view class="tui-picker-detail">
+            选择日期时间: {{dateTimeArray[0][dateTime[0]]}}-{{dateTimeArray[1][dateTime[1]]}}-{{dateTimeArray[2][dateTime[2]]}} {{dateTimeArray[3][dateTime[3]]}}:{{dateTimeArray[4][dateTime[4]]}}:{{dateTimeArray[5][dateTime[5]]}}
+          </view>
+        </picker>
+    </view>  
+  </view>
+  <view class='name'>
+    <image src='../image/guige.png'></image>
+    <input placeholder='规格'  value='{{guige}}'  bindblur='guige'></input>
+  </view>
+  <view class='name'>
+    <image src='../image/number.png'></image>
+    <input placeholder='数量' value='{{num}}'  bindblur='num'></input>
+  </view>
+  <view class='name bottom'>
+    <image src='../image/date.png'></image>
+    <input placeholder='保质期' value='{{day}}'  bindblur='day'></input>
+  </view>
+</view>
+<view class='next' bindtap='add'>确认添加</view>

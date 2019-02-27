@@ -1,0 +1,13 @@
+<view class='content'>
+ <view  class='company'>
+      <view class='company_list' wx:for="{{company}}" data-index='{{index}}' bindtap='companyClick'>
+          <image src='{{item.img_url}}'></image>
+          <text class='introduce even-ellipsis'>{{item.name}}</text>
+          <text class='label'>{{item.type}}</text>
+          <view class='adress'>
+            <image src='{{adressUrl}}' mode='aspectFit'></image>
+            <text class='odd-ellipsis'>{{item.addr}}</text>
+          </view>
+      </view>
+  </view>
+</view>

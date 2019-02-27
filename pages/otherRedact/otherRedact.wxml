@@ -1,0 +1,11 @@
+<view class='comtain'>
+    <view class='other_details'>
+      <image src='../image/other.png'></image>
+      <input placeholder='请填写详细信息' value='{{details}}'  bindblur='writeDetails'></input>
+    </view>
+    <image wx:for="{{uploadImages}}" src='{{item}}' class='img_list'></image>
+    <image src='../image/phone6.png' class='phone {{up==0?" ":"none"}}' bindtap='phone'></image>
+</view>
+
+
+<view class='next' bindtap='addOther'>确认添加</view>

@@ -1,0 +1,89 @@
+page{
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+}
+.farmers_lists{
+  width: 95vw;
+  height: 270rpx;
+  margin:20rpx auto;
+  border-radius: 20rpx;
+  background-color: #fff;
+  box-shadow:2rpx 4rpx 10rpx #eee;
+}
+.farmer_name{
+  width: 95%;
+  height: 60rpx;
+  line-height: 60rpx;
+  margin: auto;
+  border-bottom: 2rpx solid #eee;
+  font-family: "黑体";
+  font-size: 28rpx;
+  color: #353535;
+}
+.name_left{
+  float: left;
+}
+.name_right{
+  float: right;
+}
+.details{
+  width: 40%;
+  float: right;
+  text-align: right;
+  overflow:hidden;
+  white-space:nowrap;
+  text-overflow:ellipsis;
+}
+.button{
+  width: 95%;
+  height: 86rpx;
+  line-height: 86rpx;
+  font-family: "黑体";
+  font-size: 28rpx;
+  color: #353535;
+}
+.button view{
+  float: right;
+}
+.button view image{
+  width: 50rpx;
+  height: 50rpx;
+  position: relative;
+  top: 20rpx;
+}
+.change{
+  margin-right: 20rpx;
+}
+.next{
+  width: 95vw;
+  height:90rpx;
+  border-radius: 50rpx;
+  margin: auto;
+  position: fixed;
+  bottom: 40rpx;
+  right: 2.5vw;
+  line-height: 90rpx;
+  text-align: center;
+  font-family: "黑体";
+  font-size: 36rpx;
+  color: #353535;
+  background: -webkit-linear-gradient(left, #f9c852 , #fee870); /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(right, #f9c852, #fee870); /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(right, #f9c852, #fee870); /* Firefox 3.6 - 15 */
+  background: linear-gradient(to right, #f9c852 , #fee870); /* 标准的语法 */
+}
+.footer{
+  width: 100vw;
+  height:90rpx;
+  margin: 40rpx auto;
+}
+.null{
+  width:30vw;
+  height:30vh;
+  margin:200rpx auto;
+  display:block;
+}
+.none{
+  display: none;
+}

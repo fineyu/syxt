@@ -1,0 +1,47 @@
+<view>
+    <!-- 企业信息录入 -->
+    <view class='company'>
+      <view class='com_write'>
+            <view class='com_name'>
+                <image src='{{comName}}'></image>
+                <input placeholder='请输入企业名称' type='text' value='{{writeCompanyName}}' bindblur='writeCompanyName'></input>
+            </view>
+            <view class='classify'>
+                <image src='{{proName}}'></image>
+                <input placeholder='选择经营类型' type='text'  value='{{writeCompanyStyle}}' bindblur='writeCompanyStyle'></input>
+            </view>
+            <view class='com_adress'>
+                <image src='{{adress}}'></image>
+                <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+                  <view class="picker">
+                    四川省，喜德县，{{city}}
+                  </view>
+                </picker>
+            </view>
+            <view class='detail_adress'>
+                <input placeholder='请填写详细信息'  value='{{writeDetails}}'  bindblur='writeDetails'></input>
+            </view>
+      </view>
+      <view class='linkman'>
+        <view class='linkman_name'>
+            <image src='{{linkmanName}}'></image>
+            <input placeholder='请输入负责人' type='text' value='{{writePerson}}'  bindblur='writePerson'></input>
+        </view>
+        <view class='linkman_phone'>
+            <image src='{{linkmanPhone}}'></image>
+            <input placeholder='请输入联系电话' type='number' maxlength='11' value='{{writePhone}}'  bindblur='writePhone'></input>
+        </view>
+      </view>
+      <!-- 产品描述 -->
+      <view class='pro_describe'>
+            <view class='des_top'>
+              <image src='../image/describe.png' class='icon'></image>
+              <input placeholder='产品描述（1-200）字' maxlength='200'  bindblur='productDescription'  value='{{productDescription}}' ></input>
+            </view>
+            <image src='{{img_url}}' class='phone' bindtap='chooseCompanyCovers'></image>
+            <view class='uploading'>请上传一张公司封面图片</view>
+      </view>
+       <!-- 下一步 -->
+      <view class='next' bindtap='submitCompany'>提交</view>
+    </view>
+</view>

@@ -1,0 +1,21 @@
+<view>
+   <view class='company_list' wx:for="{{product_lists}}">
+        <image src='{{item.img_url}}' class='header'></image>
+        <view class='name'>
+            <view class='pro_name'>{{item.title}}</view>
+            <view class='see_number'>
+              <image src='../image/see.png'></image>
+              <text>{{item.pv}}</text>
+            </view>
+        </view>
+        <view class='button'>
+            <view class='left'><image src='../image/xiugai.png' data-index='{{index}}' bindtap='changeProductInfo'></image></view>
+            <view class='right'><image src='../image/delate.png' data-index='{{index}}' bindtap='delateProductInfo'></image></view>
+        </view>
+
+   </view>
+    <image src='{{nullSrc}}' class="null {{nullnum==0?'none':''}}" mode='aspectFit'></image>
+
+   <view class='next' bindtap='addNewProduct'>新增产品</view>
+   <view class='footer'></view>
+</view>

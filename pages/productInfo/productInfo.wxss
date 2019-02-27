@@ -1,0 +1,381 @@
+page{
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+}
+.top{
+  width: 100vw;
+  height:410rpx;
+  background-color: #f2c81f;
+  position: relative;
+}
+.top_con{
+  width: 94vw;
+  height: 582rpx;
+  margin: auto;
+  border-radius: 20rpx;
+  position: absolute;
+  top: 40rpx;
+  left: 3vw;
+  background-color: #fff;
+}
+.details{
+  font-size: 36rpx;
+  margin-left: 14rpx;
+  font-family: "黑体";
+  color: #353535;
+  margin-top: 34rpx;
+}
+.top_con image{
+  width: 100%;
+  height: 415rpx;
+}
+.com_info{
+  width: 100%;
+  height: 167rpx;
+  overflow: hidden;
+  background-color: #fff;
+  border-bottom-left-radius: 20rpx;
+  border-bottom-right-radius: 20rpx;
+}
+.com_info .name{
+  font-size: 32rpx;
+  margin-left: 14rpx;
+  font-family: "黑体";
+  color: #353535;
+}
+.share{
+  float: right;
+  margin-top: -40rpx;
+  margin-right: 12rpx;
+}
+.share button{
+  margin: 0;
+  padding: 0;
+  border: 1px solid transparent;  
+  outline: none; 
+  background: none;
+}
+.share button image{
+  width: 50rpx;
+  height: 50rpx;
+  float: right;
+  margin-right:12rpx;
+}
+.share button text{
+  font-family: "黑体";
+  font-size: 24rpx;
+  color: #999;
+  position: relative;
+  right: -48rpx;
+  top: 11rpx;
+}
+.share button:after{
+  border: 0;
+}
+.title{
+  width: 97vw;
+  height: 100rpx;
+  line-height: 100rpx;
+  font-family: "黑体";
+  color: #000;
+  font-size: 42rpx;
+  font-weight: 600;
+  margin-top: 222rpx;
+  padding-left: 3vw;
+}
+/* 农事操作 */
+.farm{
+  width: 95vw;
+  height: 88rpx;
+  line-height: 88rpx;
+  background-color: #fff;
+  margin: auto;
+  border-radius: 20rpx;
+  margin-bottom: 30rpx;
+}
+.farm .icon{
+  width: 30rpx;
+  height: 30rpx;
+  margin: 29rpx 16rpx;
+  float: left;
+}
+.farm text{
+  font-family: "黑体";
+  font-size: 28rpx;
+  color: #353535;
+  height: 88rpx;
+  line-height: 88rpx;
+  display: block;
+  float: left;
+}
+.farm .xiala{
+  width: 30rpx;
+  height: 18rpx;
+  float: right;
+  margin: 35rpx 25rpx;
+}
+/* 点击过后的样式 */
+.choosed{
+  width: 95vw;
+  height: 88rpx;
+  line-height: 88rpx;
+  background: -webkit-linear-gradient(left, #f1d327 , #efc322); /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(right, #f1d327, #efc322); /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(right, #f1d327, #efc322); /* Firefox 3.6 - 15 */
+  background: linear-gradient(to right, #f1d327 , #efc322); /* 标准的语法 */
+  margin: auto;
+  border-top-left-radius: 20rpx;
+  border-top-right-radius: 20rpx;
+  margin-bottom: 30rpx;
+}
+.choosed .icon2{
+  width: 30rpx;
+  height: 30rpx;
+  margin: 29rpx 16rpx;
+  float: left;
+}
+.choosed text{
+  font-family: "黑体";
+  font-size: 28rpx;
+  color: #fff;
+  height: 88rpx;
+  line-height: 88rpx;
+  display: block;
+  float: left;
+}
+.choosed .xiala2{
+  width: 30rpx;
+  height: 18rpx;
+  float: right;
+  margin: 35rpx 25rpx;
+}
+.process_com{
+  width:95vw;
+  margin:auto;
+  background-color:#fff;
+  margin:-17px auto 16px;
+
+}
+.none{
+  display: none;
+}
+/* 农事展开 */
+.farm_com{
+  width: 95vw;
+  margin: auto;
+  background-color: #fff;
+  margin:-30rpx auto 30rpx;
+}
+.farm_caption{
+  width: 100%;
+  height: 60rpx;
+  line-height: 60rpx;
+  overflow: hidden;
+}
+.farm_caption text{
+  display: block;
+  height: 60rpx;
+  font-family: "黑体";
+  font-size: 28rpx;
+  color: #353535;
+  float:left;
+  text-align: center;
+}
+.farm_caption text:nth-child(1){
+  width: 20%;
+}
+.farm_caption text:nth-child(2){
+  width: 58%;
+}
+.farm_caption text:nth-child(3){
+  width: 20%;
+}
+.farm_details{
+  width: 100%;
+  padding: 20rpx 0;
+  border-top: 2rpx solid #eee;
+}
+.farm_details text{
+  display: inline-block;
+  font-family: "黑体";
+  font-size: 28rpx;
+  color: #999;
+  text-align: center;
+}
+.farm_details text:nth-child(1){
+  width: 25%;
+  text-align: center;
+}
+.farm_details text:nth-child(2){
+  width: 50%;
+}
+.farm_details text:nth-child(3){
+  width: 25%;
+  text-align: center;
+}
+/* 施肥信息 */
+.shifei_com{
+  width: 95vw;
+  margin: auto;
+  background-color: #fff;
+  margin:-30rpx auto 30rpx;
+}
+.shifei_caption{
+  width: 100%;
+  height: 60rpx;
+  line-height: 60rpx;
+  overflow: hidden;
+}
+.shifei_caption text{
+  width: 25%;
+  display: block;
+  height: 60rpx;
+  font-family: "黑体";
+  font-size: 28rpx;
+  color: #353535;
+  float:left;
+  text-align: center;
+}
+
+.shifei_details{
+  width: 100%;
+  padding: 20rpx 0;
+  border-top: 2rpx solid #eee;
+}
+.shifei_details text{
+  display: inline-block;
+  font-family: "黑体";
+  font-size: 28rpx;
+  color: #999;
+  width: 25%;
+  text-align: center;
+}
+/* 包装信息 */
+.pack_com{
+  width: 95vw;
+  margin: auto;
+  background-color: #fff;
+  margin:-30rpx auto 30rpx;
+}
+.pack_caption{
+  width: 100%;
+  height: 60rpx;
+  line-height: 60rpx;
+  overflow: hidden;
+}
+.pack_caption text{
+  width: 20%;
+  display: block;
+  height: 60rpx;
+  font-family: "黑体";
+  font-size: 28rpx;
+  color: #353535;
+  float:left;
+  text-align: center;
+}
+
+.pack_details{
+  width: 100%;
+  padding: 20rpx 0;
+  border-top: 2rpx solid #eee;
+}
+.pack_details text{
+  display: inline-block;
+  font-family: "黑体";
+  font-size: 28rpx;
+  color: #999;
+  width: 20%;
+  text-align: center;
+}
+/* 其他详情 */
+.other_details{
+  width: 93vw;
+  background-color: #fff;
+  padding: 20rpx 10rpx;
+  font-family: "黑体";
+  font-size: 28rpx;
+  color: #353535;
+  margin: auto;
+  margin-top: -30rpx;
+}
+.other_details image{
+  width: 100%;
+}
+.odd-ellipsis{overflow:hidden;white-space:nowrap;text-overflow:ellipsis;}
+.even-ellipsis{display:-webkit-box !important;overflow:hidden;text-overflow:ellipsis;word-break:break-all;-webkit-box-orient:vertical;-webkit-line-clamp:2;}
+.button{
+  width: 92vw;
+  height: 90rpx;
+  margin:20rpx auto;
+  border-radius: 50rpx;
+  font-size: 29rpx;
+  font-family: "黑体";
+}
+.button_left{
+  width: 50%;
+  height: 90rpx;
+  line-height: 90rpx;
+  text-align: center;
+  float: left;
+  background: -webkit-linear-gradient(left, #ff835a , #fe646b); /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(right, #ff835a, #fe646b); /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(right, #ff835a, #fe646b); /* Firefox 3.6 - 15 */
+  background: linear-gradient(to right, #ff835a , #fe646b); /* 标准的语法 */
+  border-top-left-radius: 50rpx;
+  border-bottom-left-radius: 50rpx;
+  color: #fff;
+}
+.button_right{
+  width: 50%;
+  height: 90rpx;
+  line-height: 90rpx;
+  text-align: center;
+  float: right;
+  border-top-right-radius: 50rpx;
+  border-bottom-right-radius: 50rpx;
+  color: #353535;
+  margin: 0;
+  padding: 0;
+  border: 1px solid transparent;  
+  outline: none; 
+  background: none;
+  background: -webkit-linear-gradient(left, #f1d327 , #efc322); /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(right, #f1d327, #efc322); /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(right, #f1d327, #efc322); /* Firefox 3.6 - 15 */
+  background: linear-gradient(to right, #f1d327 , #efc322); /* 标准的语法 */
+}
+.button image{
+  width: 30rpx;
+  height: 30rpx;
+  position:relative;
+  top:7rpx;
+  right:6rpx;
+}
+
+
+.canvas {
+  width:150px;
+  height:150px;
+  position:fixed;
+  left:50%;
+  margin-left:-75px;
+  z-index:1000;
+}
+.code_icon image{
+  width:100rpx;
+  height:100rpx;
+  position:fixed;
+  bottom:88rpx;
+  right:48rpx;
+}
+.mask{
+  width:100vw;
+  height:100vh;
+  position:fixed;
+  background-color:#999;
+  z-index:999;
+  top:0;
+  left:0;
+  opacity:0.8;
+}
